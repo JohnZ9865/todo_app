@@ -13,6 +13,27 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Me.vue') }
     ]
+  },
+  {
+    path: '/john',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/John.vue') }
+    ]
+  },
+  {
+    path: '/image',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Image.vue') }
+    ]
+  },
+  {
+    path: '/googledoc',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Googledoc.vue') }
+    ]
   }
 ]
 

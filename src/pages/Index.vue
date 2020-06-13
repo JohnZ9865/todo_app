@@ -5,7 +5,7 @@
       class="cursor-pointer"
       alt="Quasar logo"
       src="~assets/quasar-logo-full.svg"
-      v-on:click="routeTo('me')"
+      v-on:click="routeTo('Me')"
     >
     <q-btn
       v-if="!hide"
@@ -15,6 +15,13 @@
       v-on:click="hide = !hide"
     >
       clickme
+    </q-btn>
+
+    <q-btn
+      rounded color="blue"
+      v-on:click="routeTo('John')"
+    >
+      Click here to go to John page
     </q-btn>
   </q-page>
 
