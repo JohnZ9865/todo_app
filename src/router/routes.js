@@ -22,10 +22,10 @@ const routes = [
     ]
   },
   {
-    path: '/image',
+    path: '/raiders',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Image.vue') }
+      { path: '', component: () => import('pages/Raiders.vue') }
     ]
   },
   {
@@ -33,6 +33,13 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Googledoc.vue') }
+    ]
+  },
+  {
+    path: '/video',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Video.vue') }
     ]
   }
 ]
