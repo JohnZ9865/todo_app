@@ -23,6 +23,13 @@
     >
       Click here to go to John page
     </q-btn>
+
+    <q-btn
+      rounded color="blue"
+      v-on:click="routeTo('Game')"
+    >
+      Click here to go to tic tac toe
+    </q-btn>
   </q-page>
 
 </template>

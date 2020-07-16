@@ -41,6 +41,13 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Video.vue') }
     ]
+  },
+  {
+    path: '/game',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Game.vue') }
+    ]
   }
 ]
 
