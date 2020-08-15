@@ -29,7 +29,6 @@ export default {
       }
     },
     routeTo: function (path) {
-      console.log('I was here')
       this.$router.push(path).catch(() => false)
     }
   }

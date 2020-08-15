@@ -39,7 +39,12 @@ module.exports = function (/* ctx */) {
     framework: {
       iconSet: 'material-icons', // Quasar icon set
       lang: 'en-us', // Quasar language pack
-
+      config: {
+        ripple: {
+          color: 'orange-5'
+           /* look at QUASARCONFOPTIONS from the API card (bottom of page) */
+        }
+      },
       // Possible values for "all":
       // * 'auto' - Auto-import needed Quasar components & directives
       //            (slightly higher compile time; next to minimum bundle size; most convenient)

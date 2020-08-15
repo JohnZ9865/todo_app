@@ -30,13 +30,28 @@
     >
       Click here to go to tic tac toe
     </q-btn>
+
+    <div>
+      <Game />
+    </div>
+
+    <div>
+      <John />
+    </div>
   </q-page>
 
 </template>
 
 <script>
+import Game from './Game'
+import John from './John'
+
 export default {
   name: 'PageIndex',
+  components: {
+    Game,
+    John
+  },
   data () {
     return {
       hide: false
